@@ -1,0 +1,143 @@
+[08-Mar-2022 03:21:28 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_teheme_file_uri() in /Users/prizm/Local Sites/talithakoum/app/public/wp-content/themes/talithakoum/front-page.php:21
+Stack trace:
+#0 /Users/prizm/Local Sites/talithakoum/app/public/wp-includes/template-loader.php(106): include()
+#1 /Users/prizm/Local Sites/talithakoum/app/public/wp-blog-header.php(19): require_once('/Users/prizm/Lo...')
+#2 /Users/prizm/Local Sites/talithakoum/app/public/index.php(17): require('/Users/prizm/Lo...')
+#3 {main}
+  thrown in /Users/prizm/Local Sites/talithakoum/app/public/wp-content/themes/talithakoum/front-page.php on line 21
+[24-Mar-2022 19:58:49 UTC] WordPress database error Table 'local.wp_give_migrations' doesn't exist for query SELECT * FROM wp_give_migrations WHERE status = 'success' made by activate_plugin, do_action('activate_give/give.php'), WP_Hook->do_action, WP_Hook->apply_filters, Give->install, give_install, give_run_install, do_action('give_upgrades'), WP_Hook->do_action, WP_Hook->apply_filters, Give\Helpers\Hooks::Give\Helpers\{closure}, give, Give->__call, Give\Container\Container->make, Give\Container\Container->resolve, Give\Container\Container->build, Give\Container\Container->Give\Container\{closure}, Give\Container\Container->build, ReflectionClass->newInstanceArgs, Give\Framework\Migrations\MigrationsRunner->__construct, Give\MigrationLog\MigrationLogRepository->getCompletedMigrationsIDs, Give\Framework\Database\DB::__callStatic, Give\Framework\Database\DB::runQueryWithErrorChecking, Give\Framework\Database\DB::Give\Framework\Database\{closure}, call_user_func_array
+[24-Mar-2022 19:58:49 UTC] Query failed in database
+[24-Mar-2022 19:58:49 UTC] WordPress database error Table 'local.wp_give_migrations' doesn't exist for query SELECT count(id) FROM wp_give_migrations WHERE id IN ('set_paypal_standard_id_to_paypal_from_paypal_standard','remove-paypal-ipn-verification-setting','set-form-donation-levels-to-strings','create_revenue_table','remove_revenue_foreign_keys','create_migrations_table','migrate_completed_migrations','create_new_log_table','delete_old_log_tables','add-statement-descriptor-to-stripe-accounts') AND status != 'success' made by activate_plugin, do_action('activate_give/give.php'), WP_Hook->do_action, WP_Hook->apply_filters, Give->install, give_install, give_run_install, do_action('give_upgrades'), WP_Hook->do_action, WP_Hook->apply_filters, Give\Helpers\Hooks::Give\Helpers\{closure}, call_user_func_array, Give\Framework\Migrations\MigrationsRunner->run, Give\MigrationLog\MigrationLogRepository->getFailedMigrationsCountByIds, Give\Framework\Database\DB::__callStatic, Give\Framework\Database\DB::runQueryWithErrorChecking, Give\Framework\Database\DB::Give\Framework\Database\{closure}, call_user_func_array
+[31-Mar-2022 23:22:32 UTC] WordPress database error Table 'local.wp_give_subscriptions' doesn't exist for query SELECT id FROM wp_give_subscriptions WHERE parent_payment_id = '2' LIMIT 1; made by do_action_ref_array('wp_scheduled_delete'), WP_Hook->do_action, WP_Hook->apply_filters, wp_scheduled_delete, wp_delete_post, wp_delete_post_revision, wp_delete_post, do_action('before_delete_post'), WP_Hook->do_action, WP_Hook->apply_filters, Give_Recurring_Cache->flush_on_donation_delete, Give_Recurring_Cache->flush_on_donation_edit, Give_DB->get_column_by
+[31-Mar-2022 23:22:32 UTC] WordPress database error Table 'local.wp_give_subscriptions' doesn't exist for query SELECT id FROM wp_give_subscriptions WHERE parent_payment_id = '2' LIMIT 1; made by do_action_ref_array('wp_scheduled_delete'), WP_Hook->do_action, WP_Hook->apply_filters, wp_scheduled_delete, wp_delete_post, wp_delete_post_revision, wp_delete_post, do_action('before_delete_post'), WP_Hook->do_action, WP_Hook->apply_filters, Give_Recurring_Cache->flush_on_donation_delete, Give_Recurring_Cache->flush_on_donation_edit, Give_DB->get_column_by
+[05-Apr-2022 23:02:56 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/forums/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /Users/prizm/Local Sites/talithakoum/app/public/wp-includes/update.php on line 175
+[05-Apr-2022 23:02:56 UTC] PHP Stack trace:
+[05-Apr-2022 23:02:56 UTC] PHP   1. {main}() /Users/prizm/Local Sites/talithakoum/app/public/wp-cron.php:0
+[05-Apr-2022 23:02:56 UTC] PHP   2. do_action_ref_array() /Users/prizm/Local Sites/talithakoum/app/public/wp-cron.php:138
+[05-Apr-2022 23:02:56 UTC] PHP   3. WP_Hook->do_action() /Users/prizm/Local Sites/talithakoum/app/public/wp-includes/plugin.php:522
+[05-Apr-2022 23:02:56 UTC] PHP   4. WP_Hook->apply_filters() /Users/prizm/Local Sites/talithakoum/app/public/wp-includes/class-wp-hook.php:331
+[05-Apr-2022 23:02:56 UTC] PHP   5. wp_version_check() /Users/prizm/Local Sites/talithakoum/app/public/wp-includes/class-wp-hook.php:307
+[05-Apr-2022 23:02:56 UTC] PHP   6. trigger_error() /Users/prizm/Local Sites/talithakoum/app/public/wp-includes/update.php:175
+[05-Apr-2022 23:02:56 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/forums/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /Users/prizm/Local Sites/talithakoum/app/public/wp-includes/update.php on line 413
+[05-Apr-2022 23:02:56 UTC] PHP Stack trace:
+[05-Apr-2022 23:02:56 UTC] PHP   1. {main}() /Users/prizm/Local Sites/talithakoum/app/public/wp-cron.php:0
+[05-Apr-2022 23:02:56 UTC] PHP   2. do_action_ref_array() /Users/prizm/Local Sites/talithakoum/app/public/wp-cron.php:138
+[05-Apr-2022 23:02:56 UTC] PHP   3. WP_Hook->do_action() /Users/prizm/Local Sites/talithakoum/app/public/wp-includes/plugin.php:522
+[05-Apr-2022 23:02:56 UTC] PHP   4. WP_Hook->apply_filters() /Users/prizm/Local Sites/talithakoum/app/public/wp-includes/class-wp-hook.php:331
+[05-Apr-2022 23:02:56 UTC] PHP   5. wp_update_plugins() /Users/prizm/Local Sites/talithakoum/app/public/wp-includes/class-wp-hook.php:307
+[05-Apr-2022 23:02:56 UTC] PHP   6. trigger_error() /Users/prizm/Local Sites/talithakoum/app/public/wp-includes/update.php:413
+[05-Apr-2022 23:02:56 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/forums/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /Users/prizm/Local Sites/talithakoum/app/public/wp-includes/update.php on line 693
+[05-Apr-2022 23:02:56 UTC] PHP Stack trace:
+[05-Apr-2022 23:02:56 UTC] PHP   1. {main}() /Users/prizm/Local Sites/talithakoum/app/public/wp-cron.php:0
+[05-Apr-2022 23:02:56 UTC] PHP   2. do_action_ref_array() /Users/prizm/Local Sites/talithakoum/app/public/wp-cron.php:138
+[05-Apr-2022 23:02:56 UTC] PHP   3. WP_Hook->do_action() /Users/prizm/Local Sites/talithakoum/app/public/wp-includes/plugin.php:522
+[05-Apr-2022 23:02:56 UTC] PHP   4. WP_Hook->apply_filters() /Users/prizm/Local Sites/talithakoum/app/public/wp-includes/class-wp-hook.php:331
+[05-Apr-2022 23:02:56 UTC] PHP   5. wp_update_themes() /Users/prizm/Local Sites/talithakoum/app/public/wp-includes/class-wp-hook.php:307
+[05-Apr-2022 23:02:56 UTC] PHP   6. trigger_error() /Users/prizm/Local Sites/talithakoum/app/public/wp-includes/update.php:693
+[02-Sep-2022 02:37:21 UTC] Sync process for Gutenberg Blocks has started.
+[02-Sep-2022 02:37:21 UTC] CATEGORY:Importing categories..
+[02-Sep-2022 02:37:22 UTC] CATEGORY:Storing in option ast-block-templates-categories
+[02-Sep-2022 02:37:22 UTC] CATEGORY:Completed category import.
+[02-Sep-2022 02:37:22 UTC] BLOCK: Getting Total Blocks
+[02-Sep-2022 02:37:22 UTC] BLOCK: https://websitedemos.net/wp-json/astra-blocks/v1/get-blocks-count/?page_builder=gutenberg&wireframe=yes
+[02-Sep-2022 02:37:22 UTC] BLOCK: Requests count 4
+[02-Sep-2022 02:37:22 UTC] BLOCK: Importing request 1 ..
+[02-Sep-2022 02:37:22 UTC] BLOCK: https://websitedemos.net/wp-json/astra-blocks/v1/blocks/?page_builder=gutenberg&per_page=100&page=1&wireframe=yes
+[02-Sep-2022 02:37:22 UTC] BLOCK: Storing in option ast-block-templates-blocks-1
+[02-Sep-2022 02:37:22 UTC] BLOCK: Completed request 1
+[02-Sep-2022 02:37:22 UTC] BLOCK: Importing request 2 ..
+[02-Sep-2022 02:37:22 UTC] BLOCK: https://websitedemos.net/wp-json/astra-blocks/v1/blocks/?page_builder=gutenberg&per_page=100&page=2&wireframe=yes
+[02-Sep-2022 02:37:22 UTC] BLOCK: Storing in option ast-block-templates-blocks-2
+[02-Sep-2022 02:37:22 UTC] BLOCK: Completed request 2
+[02-Sep-2022 02:37:22 UTC] BLOCK: Importing request 3 ..
+[02-Sep-2022 02:37:22 UTC] BLOCK: https://websitedemos.net/wp-json/astra-blocks/v1/blocks/?page_builder=gutenberg&per_page=100&page=3&wireframe=yes
+[02-Sep-2022 02:37:22 UTC] BLOCK: Storing in option ast-block-templates-blocks-3
+[02-Sep-2022 02:37:22 UTC] BLOCK: Completed request 3
+[02-Sep-2022 02:37:22 UTC] BLOCK: Importing request 4 ..
+[02-Sep-2022 02:37:22 UTC] BLOCK: https://websitedemos.net/wp-json/astra-blocks/v1/blocks/?page_builder=gutenberg&per_page=100&page=4&wireframe=yes
+[02-Sep-2022 02:37:22 UTC] BLOCK: Storing in option ast-block-templates-blocks-4
+[02-Sep-2022 02:37:22 UTC] BLOCK: Completed request 4
+[02-Sep-2022 02:37:22 UTC] SITE: Getting Total Sites
+[02-Sep-2022 02:37:22 UTC] SITE: https://websitedemos.net/wp-json/astra-sites/v1/get-total-pages/?page_builder=gutenberg
+[02-Sep-2022 02:37:23 UTC] SITE: Request count 2
+[02-Sep-2022 02:37:23 UTC] SITE: Importing request 1 ..
+[02-Sep-2022 02:37:23 UTC] SITE: https://websitedemos.net/wp-json/astra-sites/v1/sites-and-pages/?per_page=100&page=1&page-builder=gutenberg
+[02-Sep-2022 02:37:23 UTC] SITE: Storing in option ast-block-templates-sites-1
+[02-Sep-2022 02:37:23 UTC] SITE: Completed request 1
+[02-Sep-2022 02:37:23 UTC] SITE: Importing request 2 ..
+[02-Sep-2022 02:37:23 UTC] SITE: https://websitedemos.net/wp-json/astra-sites/v1/sites-and-pages/?per_page=100&page=2&page-builder=gutenberg
+[02-Sep-2022 02:37:23 UTC] SITE: Storing in option ast-block-templates-sites-2
+[02-Sep-2022 02:37:23 UTC] SITE: Completed request 2
+[02-Sep-2022 02:37:23 UTC] Sync process for Gutenberg Blocks is done.
+[07-Sep-2022 21:08:47 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/forums/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /Users/prizm/Local Sites/talithakoum/app/public/wp-includes/update.php on line 172
+[07-Sep-2022 21:08:47 UTC] PHP Stack trace:
+[07-Sep-2022 21:08:47 UTC] PHP   1. {main}() /Users/prizm/Local Sites/talithakoum/app/public/wp-cron.php:0
+[07-Sep-2022 21:08:47 UTC] PHP   2. do_action_ref_array() /Users/prizm/Local Sites/talithakoum/app/public/wp-cron.php:138
+[07-Sep-2022 21:08:47 UTC] PHP   3. WP_Hook->do_action() /Users/prizm/Local Sites/talithakoum/app/public/wp-includes/plugin.php:524
+[07-Sep-2022 21:08:47 UTC] PHP   4. WP_Hook->apply_filters() /Users/prizm/Local Sites/talithakoum/app/public/wp-includes/class-wp-hook.php:331
+[07-Sep-2022 21:08:47 UTC] PHP   5. wp_version_check() /Users/prizm/Local Sites/talithakoum/app/public/wp-includes/class-wp-hook.php:307
+[07-Sep-2022 21:08:47 UTC] PHP   6. trigger_error() /Users/prizm/Local Sites/talithakoum/app/public/wp-includes/update.php:172
+[07-Sep-2022 21:08:47 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/forums/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /Users/prizm/Local Sites/talithakoum/app/public/wp-includes/update.php on line 410
+[07-Sep-2022 21:08:47 UTC] PHP Stack trace:
+[07-Sep-2022 21:08:47 UTC] PHP   1. {main}() /Users/prizm/Local Sites/talithakoum/app/public/wp-cron.php:0
+[07-Sep-2022 21:08:47 UTC] PHP   2. do_action_ref_array() /Users/prizm/Local Sites/talithakoum/app/public/wp-cron.php:138
+[07-Sep-2022 21:08:47 UTC] PHP   3. WP_Hook->do_action() /Users/prizm/Local Sites/talithakoum/app/public/wp-includes/plugin.php:524
+[07-Sep-2022 21:08:47 UTC] PHP   4. WP_Hook->apply_filters() /Users/prizm/Local Sites/talithakoum/app/public/wp-includes/class-wp-hook.php:331
+[07-Sep-2022 21:08:47 UTC] PHP   5. wp_update_plugins() /Users/prizm/Local Sites/talithakoum/app/public/wp-includes/class-wp-hook.php:307
+[07-Sep-2022 21:08:47 UTC] PHP   6. trigger_error() /Users/prizm/Local Sites/talithakoum/app/public/wp-includes/update.php:410
+[07-Sep-2022 21:08:49 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/forums/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /Users/prizm/Local Sites/talithakoum/app/public/wp-includes/update.php on line 690
+[07-Sep-2022 21:08:49 UTC] PHP Stack trace:
+[07-Sep-2022 21:08:49 UTC] PHP   1. {main}() /Users/prizm/Local Sites/talithakoum/app/public/wp-cron.php:0
+[07-Sep-2022 21:08:49 UTC] PHP   2. do_action_ref_array() /Users/prizm/Local Sites/talithakoum/app/public/wp-cron.php:138
+[07-Sep-2022 21:08:49 UTC] PHP   3. WP_Hook->do_action() /Users/prizm/Local Sites/talithakoum/app/public/wp-includes/plugin.php:524
+[07-Sep-2022 21:08:49 UTC] PHP   4. WP_Hook->apply_filters() /Users/prizm/Local Sites/talithakoum/app/public/wp-includes/class-wp-hook.php:331
+[07-Sep-2022 21:08:49 UTC] PHP   5. wp_update_themes() /Users/prizm/Local Sites/talithakoum/app/public/wp-includes/class-wp-hook.php:307
+[07-Sep-2022 21:08:49 UTC] PHP   6. trigger_error() /Users/prizm/Local Sites/talithakoum/app/public/wp-includes/update.php:690
+[07-Sep-2022 21:08:51 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/forums/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /Users/prizm/Local Sites/talithakoum/app/public/wp-admin/includes/update.php on line 143
+[07-Sep-2022 21:08:51 UTC] PHP Stack trace:
+[07-Sep-2022 21:08:51 UTC] PHP   1. {main}() /Users/prizm/Local Sites/talithakoum/app/public/wp-cron.php:0
+[07-Sep-2022 21:08:51 UTC] PHP   2. do_action_ref_array() /Users/prizm/Local Sites/talithakoum/app/public/wp-cron.php:138
+[07-Sep-2022 21:08:51 UTC] PHP   3. WP_Hook->do_action() /Users/prizm/Local Sites/talithakoum/app/public/wp-includes/plugin.php:524
+[07-Sep-2022 21:08:51 UTC] PHP   4. WP_Hook->apply_filters() /Users/prizm/Local Sites/talithakoum/app/public/wp-includes/class-wp-hook.php:331
+[07-Sep-2022 21:08:51 UTC] PHP   5. WP_Site_Health->wp_cron_scheduled_check() /Users/prizm/Local Sites/talithakoum/app/public/wp-includes/class-wp-hook.php:307
+[07-Sep-2022 21:08:51 UTC] PHP   6. WP_Site_Health->perform_test() /Users/prizm/Local Sites/talithakoum/app/public/wp-admin/includes/class-wp-site-health.php:2787
+[07-Sep-2022 21:08:51 UTC] PHP   7. WP_Site_Health->get_test_background_updates() /Users/prizm/Local Sites/talithakoum/app/public/wp-admin/includes/class-wp-site-health.php:192
+[07-Sep-2022 21:08:51 UTC] PHP   8. WP_Site_Health_Auto_Updates->run_tests() /Users/prizm/Local Sites/talithakoum/app/public/wp-admin/includes/class-wp-site-health.php:1812
+[07-Sep-2022 21:08:51 UTC] PHP   9. WP_Site_Health_Auto_Updates->test_all_files_writable() /Users/prizm/Local Sites/talithakoum/app/public/wp-admin/includes/class-wp-site-health-auto-updates.php:37
+[07-Sep-2022 21:08:51 UTC] PHP  10. get_core_checksums() /Users/prizm/Local Sites/talithakoum/app/public/wp-admin/includes/class-wp-site-health-auto-updates.php:332
+[07-Sep-2022 21:08:51 UTC] PHP  11. trigger_error() /Users/prizm/Local Sites/talithakoum/app/public/wp-admin/includes/update.php:143
+[28-Oct-2022 19:13:52 UTC] Sync process for Gutenberg Blocks has started.
+[28-Oct-2022 19:13:52 UTC] CATEGORY:Importing categories..
+[28-Oct-2022 19:13:53 UTC] CATEGORY:Storing in option ast-block-templates-categories
+[28-Oct-2022 19:13:53 UTC] CATEGORY:Completed category import.
+[28-Oct-2022 19:13:53 UTC] BLOCK: Getting Total Blocks
+[28-Oct-2022 19:13:53 UTC] BLOCK: https://websitedemos.net/wp-json/astra-blocks/v1/get-blocks-count/?page_builder=gutenberg&wireframe=yes
+[28-Oct-2022 19:13:53 UTC] BLOCK: Requests count 4
+[28-Oct-2022 19:13:53 UTC] BLOCK: Importing request 1 ..
+[28-Oct-2022 19:13:53 UTC] BLOCK: https://websitedemos.net/wp-json/astra-blocks/v1/blocks/?page_builder=gutenberg&per_page=100&page=1&wireframe=yes
+[28-Oct-2022 19:13:53 UTC] BLOCK: Storing in option ast-block-templates-blocks-1
+[28-Oct-2022 19:13:53 UTC] BLOCK: Completed request 1
+[28-Oct-2022 19:13:53 UTC] BLOCK: Importing request 2 ..
+[28-Oct-2022 19:13:53 UTC] BLOCK: https://websitedemos.net/wp-json/astra-blocks/v1/blocks/?page_builder=gutenberg&per_page=100&page=2&wireframe=yes
+[28-Oct-2022 19:13:53 UTC] BLOCK: Storing in option ast-block-templates-blocks-2
+[28-Oct-2022 19:13:53 UTC] BLOCK: Completed request 2
+[28-Oct-2022 19:13:53 UTC] BLOCK: Importing request 3 ..
+[28-Oct-2022 19:13:53 UTC] BLOCK: https://websitedemos.net/wp-json/astra-blocks/v1/blocks/?page_builder=gutenberg&per_page=100&page=3&wireframe=yes
+[28-Oct-2022 19:13:58 UTC] BLOCK: Storing in option ast-block-templates-blocks-3
+[28-Oct-2022 19:13:58 UTC] BLOCK: Completed request 3
+[28-Oct-2022 19:13:58 UTC] BLOCK: Importing request 4 ..
+[28-Oct-2022 19:13:58 UTC] BLOCK: https://websitedemos.net/wp-json/astra-blocks/v1/blocks/?page_builder=gutenberg&per_page=100&page=4&wireframe=yes
+[28-Oct-2022 19:13:58 UTC] BLOCK: Storing in option ast-block-templates-blocks-4
+[28-Oct-2022 19:13:58 UTC] BLOCK: Completed request 4
+[28-Oct-2022 19:13:58 UTC] SITE: Getting Total Sites
+[28-Oct-2022 19:13:58 UTC] SITE: https://websitedemos.net/wp-json/astra-sites/v1/get-total-pages/?page_builder=gutenberg
+[28-Oct-2022 19:13:58 UTC] SITE: Request count 2
+[28-Oct-2022 19:13:58 UTC] SITE: Importing request 1 ..
+[28-Oct-2022 19:13:58 UTC] SITE: https://websitedemos.net/wp-json/astra-sites/v1/sites-and-pages/?per_page=100&page=1&page-builder=gutenberg
+[28-Oct-2022 19:13:59 UTC] SITE: Storing in option ast-block-templates-sites-1
+[28-Oct-2022 19:13:59 UTC] SITE: Completed request 1
+[28-Oct-2022 19:13:59 UTC] SITE: Importing request 2 ..
+[28-Oct-2022 19:13:59 UTC] SITE: https://websitedemos.net/wp-json/astra-sites/v1/sites-and-pages/?per_page=100&page=2&page-builder=gutenberg
+[28-Oct-2022 19:13:59 UTC] SITE: Storing in option ast-block-templates-sites-2
+[28-Oct-2022 19:13:59 UTC] SITE: Completed request 2
+[28-Oct-2022 19:13:59 UTC] Sync process for Gutenberg Blocks is done.
