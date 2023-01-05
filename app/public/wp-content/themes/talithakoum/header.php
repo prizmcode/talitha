@@ -17,7 +17,7 @@
 
 	<?php do_action( 'tailpress_header' ); ?>
 
-	<header class="primary">
+	<header class="primary w-full">
 
 		<div class="mx-auto container px-8">
 			<div class="lg:flex lg:justify-between lg:items-center py-5">
